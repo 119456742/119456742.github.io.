@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=BioRhyme Expanded' rel='stylesheet'>
+<style>
+h2 {
+background-color: peachpuff;
+font-family: 'BioRhyme Expanded';
+}
+
+h3 {
+background-color: peachpuff;
+font-family: 'BioRhyme Expanded';
+
+}
+
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: peachpuff;
+  font-family: 'BioRhyme Expanded';
+  color: black;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: peachpuff;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+button {
+background-color: peachpuff;
+}
+
+#Sports {background-color: white;}
+#Travel {background-color: white;}
+#Gallery {background-color: white;}
+
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Sports', this, '#ffdab0')" id="defaultOpen">Sports</button>
+<button class="tablink" onclick="openPage('Travel', this, '#ffdab0')">Travel</button><br><br><br>
+<button , onclick="window.location.href = 'file:///C:/Users/ciara/Desktop/Notepad%20++/gallery.html';">Gallery</button>
+
+<div id="Sports" class="tabcontent">
+  <h2 align=center>Sports</h2>
+  <h3>Horse-riding</h3>
+  <p> Horse-riding has been a passion of mine ever since I was seven years old. This is my twelfth year horse-riding. <br> I've competed in numerous competitions on small and large scales. Some of the more well-known competitions that i have participated in are The Dublin Horse Show in the RDS for the last four years in a row, Millstreet Horse Show and Horse of the Year Show in Birmingham
+  in October of 2017. <br> In the recent few months it's been increasingly difficult to make time to go up and see the horses and exercise them with long college hours and long work hours too. Hopefully in the summer I'll be able to get back into horse-riding. <br> <br>
+
+	 <img src="https://www.nicomorgan.co.uk/wp-content/uploads/2015/08/hoys-show-jumping-2.jpg" width="800" height="400">
+
+
+<h3>Surfing</h3>
+<p>Surfing is particularly is a big passion of mine especially when the weather is good or when im on holidays. It's a good way to pass time and clear my mind after a stressful week. This also helps me sleep better at night because my body is physically tired. <br> Hopefully in summer of 2021 or 2022, I'll be able to spend a summer by a good surfing beach and really practice my skills.
+<br><br><br>
+</div>
+
+
+
+<div id="Travel" class="tabcontent">
+    <p> I love travelling to new places and trying to immerse myself in new cultures</p>
+	
+	  <h3>U.A.E</h3>
+	<p>The United Arab Emirates is probably my favourite place that I've visited. We went to <strong> Abu Dhabi </strong> first and visited many cultural places like The Sheikh Zayed Grand Mosque. <br> This mosque is one of the largest mosques in the world. When we visited we had to wear an abaya in order to be respectful of the muslim people worshipping at the mosque.<br> At one time the mosque can accommodate a maximum of 41,000 people. <br><br><br>
+     <img src="https://www.wallpapers13.com/wp-content/uploads/2016/09/Sheikh-Zayed-Grand-Mosque-in-Abu-Dhabi-Main-frontal-entry-HD-Wallpaper-1920x1080-915x515.jpg" alt="" width="800" height="400">
+	 
+	<p>After visiting Abu Dhabi, we then travelled to <strong> Dubai </strong> to visit the Burj Khalifa, the Burj Al Arab and the Dubai Fountains. <br> The Burj Khalifa is located on the grounds of the 
+	Dubai Mall and is the tallest building in the world, standing at 828 metres high. It took 6 years and 12,000 workers in order to build the Burj Khalifa. <br>
+     <img src="https://lh3.googleusercontent.com/proxy/8tTN5So8-0uJrEFIJo9foYpZxJ2PKBO1JxfT6XG_UhqaIDsxW59v_EQuvyBNRIW9JB0gtWdV2Z3aC28hyU-HTAKb3A5t24ZbFJKxwSH22diPSQ-pzTCOScga" alt="" width="800" height="400">
+ 
+ 
+ 
+ 
+      <h3>Fiji</h3>
+	 <p> Fiji is a country in the Pacific Islands, just north of New Zealand. I went to Fiji to visit my aunt, her husband, Hamish and two of my cousins, Kitty and Niamh that live there. Although the population is around 900,000 , 34% of the islands that make up Fiji are inhabited. <br> <br>
+	 
+	 <img src="https://wallpapercave.com/wp/wp1926785.jpg" width="800" height="400">
+ 
+ 
+ 
+ 
+ 
+ </div>
+
+
+<script>
+function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+
+
+</html>

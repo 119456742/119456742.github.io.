@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta charset="utf-8" />
+ <title>Ebusiness 1</title>
+ <link rel="stylesheet" href="style.css" type="text/css" />
+<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+<style>
+
+h1 {
+background-color: peachpuff;
+  font-family: 'Courgette';
+
+}
+
+table
+{
+    border: 1px dashed black;
+    }
+td
+{
+    padding: 2px;
+    border: 1px solid #FFDAB9;
+    }
+
+#course-name
+{
+    font-weight:bold;
+    }
+
+#company-name
+{
+    height:2px;
+    text-decoration:underline;
+    }
+#job-title
+{
+    height: 5px;
+    }
+.job-duration
+{
+    float:right;
+    }
+#heading
+{
+    font-weight:bold;
+    }
+
+</style>
+ 
+</head>
+<body>
+ <div class="form">
+  <form name="subCalc" method="post" action="Ebusiness2.php">
+   <h1 align=center>Please select a consulting service:</h1>
+   
+ 
+
+     <table cellspacing="10">
+    <tr>
+
+    </tr>
+    <tr>
+     <td>Hyper-automation @ $200</td>
+     <td><input type="radio" id="rdol" name="rdoGroup" value="200" /></td>
+    </tr>
+    <tr>
+     <td>Multiexperience @ $500</td>
+     <td><input type="radio" id="rdo2" name="rdoGroup" value="500" /></td>
+    </tr>
+    <tr>
+     <td>Distributed Cloud @ $1000</td>
+     <td><input type="radio" id="rdo3" name="rdoGroup" value="1000" /></td>
+    </tr>
+    <tr>
+   </table>
+ 
+ 
+
+     <table cellspacing="10">
+    <tr>
+     <td><b></b></td>
+    </tr>
+    <tr>
+     <td>Sub Total</td>
+     <td><input type="number" id="txtSub" name="txtSub" readonly /></td>
+    </tr>
+    <tr>
+     <td>Discount @ 5%</td>
+     <td><input type="number" id="txtDiscount" name="txtDiscount" readonly /></td>
+    </tr>
+<tr>
+     <td>Vat @ 20%</td>
+     <td><input type="number" id="txtTax" name="txtTax" readonly /></td>
+    </tr>
+<tr>
+     <td><b>Total</b></td>
+     <td><input type="number" id="txtTotal" name="txtTotal" readonly /></td>
+    </tr>
+    <tr>
+   </table>
+  
+   <br />
+   <center>
+   <input type="button" name="btnCalc" id="btnCalc" onclick="AmountCalc()" value="Calculate Amount" />
+   <input type="reset" value="Clear">
+
+
+   </center>
+  </form>
+  
+</div>
+
+   <button , onclick="window.location.href = 'file:///C:/Users/ciara/Desktop/Notepad%20++/ProjectWork.html';">Home</button>
+   <button , onclick="window.location.href = 'file:///C:/Users/ciara/Desktop/Notepad%20++/checkout.html';">Continue to Checkout</button>
+<script type="text/javascript">
+ function AmountCalc() {
+  var rdol = parseFloat(document.getElementById('rdol').value);
+  var sub;
+ 
+  if (document.getElementById('rdol').checked) {
+   sub = (200);
+  }
+  else if (document.getElementById('rdo2').checked) {
+   sub = (500);
+  }
+  else if (document.getElementById('rdo3').checked) {
+   sub = (1000);
+  }
+
+  SubDisplay(sub);
+  DiscountDisplay(sub*0.05);
+  VatDisplay((sub-(sub*0.05))*0.2);
+  TotalDisplay(sub-(sub*0.05)+((sub-(sub*0.05))*0.2))
+ }
+ 
+ 
+ 
+ function SubDisplay(parm1) {
+  parm1 = parm1.toFixed(2)
+  document.subCalc.txtSub.value = parm1;
+  }
+ 
+ function DiscountDisplay(parm2) {
+  parm2 = parm2.toFixed(2)
+  document.subCalc.txtDiscount.value = parm2;
+  }
+ 
+  function VatDisplay(parm3) {
+  parm3 = parm3.toFixed(2)
+  document.subCalc.txtTax.value = parm3;
+  }
+ 
+  function TotalDisplay(parm4) {
+  parm4 = parm4.toFixed(2)
+  document.subCalc.txtTotal.value = parm4;
+  }
+ </script>
+</body>
+</html>

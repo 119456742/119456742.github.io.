@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+
+.button {
+  background-color: peachpuff;
+  border-bottom-color: peachpuff;
+  color: black;
+  }
+  
+ </style>
+ 
+ <body>
+
+ 
+
+ <button , onclick="window.location.href = 'file:///C:/Users/ciara/Desktop/Notepad%20++/ProjectWork.html';">Home</button>
+</body>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: peachpuff;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ffb3b3; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h1>Cíara Enright</h1>
+
+<button class="accordion">Personal Details</button>
+  
+<div class="panel">
+<p><strong>Address: </strong> 123 Blackrock Road, Blackrock, Cork, Ireland</p>
+<p><strong>E-mail: </strong> ********@hotmail.com</p>
+<p><em>Highly motivated and dedicated worker, with over three years experience working in public services.</em></p>
+</div>
+
+<button class="accordion">Experience</button>
+<div class="panel"
+  <p><strong>2014:</strong> Work Experience in C.S.P.C.A</p>
+  <p><strong>January 2017- May 2019: </strong>Bladez Barbers, Sheares Street, Cork City</p>
+  <p><strong>May 2019- Present: </strong>Customer Services Consultant, Centra Rochestown, Cork</p>
+</div>
+
+<button class="accordion">References</button>
+<div class="panel">
+  <p><strong>John Doe</strong> <br> Proprietor of Bladez Barbers<br> ***-***-****</p>
+  
+  <p><br><strong>Jane Doe</strong><br> Head Manager in Centra Rochestown<br> ***-***-****</p>
+</div>
+
+<button class="accordion">Educational Experience</button>
+<div class="panel">
+
+ <style>
+div
+
+
+table
+{
+    border: 1px dashed black;
+    }
+td
+{
+    padding: 2px;
+    border: 1px solid #FFDAB9;
+    }
+
+#course-name
+{
+    font-weight:bold;
+    }
+
+#company-name
+{
+    height:2px;
+    text-decoration:underline;
+    }
+#job-title
+{
+    height: 5px;
+    }
+.job-duration
+{
+    float:right;
+    }
+#heading
+{
+    font-weight:bold;
+    }
+ </style>
+
+
+            <h3>Educational Qualifications</h3>
+            <table>
+                <tr id="heading">
+                    <td>Qualification</td>
+                    <td>Institute</td>
+					<td>Percentage / Grades</td>  
+					<td>Year</td>
+                    
+                </tr>
+                <tr>
+                    <td>Leaving Certificate</td>
+                    <td>Bruce College, Cork</td>
+                    <td>600 points</td>
+                    <td>2018</td>
+                </tr>
+                <tr>
+                    <td>Business Information Systems- BSc(Hons)</td>
+                    <td>University College Cork</td>
+                    <td>Passed BIS1 Exams</td>
+                    <td>2019/20</td>
+                </tr>
+              
+                
+            </table>
+
+     </div>
+     <div id="footer"></div>
+
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
