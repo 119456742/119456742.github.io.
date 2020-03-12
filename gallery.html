@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=BioRhyme Expanded' rel='stylesheet'>
+<title>Interests</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+h2 {
+background-color: peachpuff;
+font-family: 'BioRhyme Expanded';
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: peachpuff;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #B49977;
+  color: white;
+}
+
+#container {
+  overflow: hidden;
+  width: 800px;
+  height: 230px;
+  margin: 0 auto;
+  cursor: pointer;
+  margin-top:150px;
+}
+
+#imgs {
+  display: block;
+  padding: 0;
+  width: 400%;
+  length: 350%;
+}
+
+#imgs li {
+  padding-right: 10px;
+  display: inline-block;
+ *display:inline;
+}
+
+#imgs img {
+  width: 160px;
+  height: 120px;
+}
+
+.title {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  background: #ddd;
+}
+</style>
+</head>
+<body>
+
+
+<div class="main">
+
+<h2>Interests Gallery</h2>
+
+
+<div class="container">
+
+  <ul id="imgs">
+    <li><img src="https://www.jbshowjumptraining.com/images/horses/Marcel-Des-Rosiers-2.jpg" style="width:500px;height:600px;"" alt="Show jumping" / ></li>
+	<li><img src="https://i.pinimg.com/originals/b9/82/a2/b982a23f52939a54d7aea51496a75154.jpg" style="width:500px;height:600px;" alt="Catching a wave" /></li>
+	<li><img src="https://www.fodors.com/wp-content/uploads/2018/03/Black-Sand-Beaches-Hero.jpg" style="width:500px;height:600px;" alt="New Zealand" /></li>
+	<li><img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/6d/00/ce/winter-kayaking-stunning.jpg" style="width:500px;height:600px;" alt="Show jumping" /></li>
+	<li><img src="https://i.pinimg.com/originals/70/fe/af/70feaf5eb2f3e1a697cae4776dfaa3d2.jpg" style="width:500px;height:600px;" alt="Show jumping" /></li>
+	<li><img src="https://i.pinimg.com/originals/15/9d/8c/159d8cfdb452f340f586b85c2fde586c.jpg" style="width:500px;height:600px;" alt="Show jumping" /></li>
+	<li><img src="https://i.pinimg.com/originals/c1/f3/a4/c1f3a4b95db2d948b74fc98c7a284038.jpg" style="width:500px;height:600px;" alt="Show jumping" /></li>
+	<li><img src="https://i.pinimg.com/736x/23/ec/44/23ec44daa7cc537d51a862cdb5be4e0d.jpg"style="width:500px;height:600px;" alt="Show jumping" /></li>
+	<li><img src="https://www.nicomorgan.co.uk/wp-content/uploads/2015/08/hoys-show-jumping-2.jpg" style="width:500px;height:600px;" alt="HOYS19" /><li>
+	
+  </ul>
+  <span class="title"></span></div>
+<div id="controler"> </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="lib/ImageScroll.js"></script>
+<script type="text/javascript">
+
+  $('#imgs').imageScroll({
+    orientation:"left",
+    speed:600,
+    interval:1000,
+    hoverPause:true,
+    callback:function(){
+      var ordinal = $(this).find("img").first().attr("src");
+      <!-- console.log(ordinal); -->
+      $(this).next("span").text("");
+    }
+  });
+
+  </script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+
+</html>     
+</body>
